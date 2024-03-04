@@ -1,7 +1,6 @@
-//planning
+let testScore = 89;
+let grade;
 
-let name = prompt()
-
-let i = Math.floor(Math.random() * (name.length + 1));
-console.log(i);
-console.log(name.charAt(i));
+if (testScore >= 90){
+    grade = "A";
+}
