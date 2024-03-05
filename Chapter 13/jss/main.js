@@ -1,22 +1,22 @@
-// let myNumber = 0;
-// do{
-//     myNumber += 1;
-//     console.log(myNumber);
+// function sum(num1, num2) {
+//     if (num2 === undefined){
+//         return num1 + num1
+//     }
     
-// } while (myNumber < 50){
-
+//     return num1 + num2;
 // }
 
-let name = "dave";
-let counter = 0;
-let myLetter;
-while (counter <= 3) {
-    myLetter = name[counter];
-    console.log(myLetter);
-    if (counter === 1){
-        counter += 2;
-        continue;
-    }
-    if (myLetter === "v") break;
-    counter ++;
+// console.log(sum(2, 7))
+
+// function getUserName(email){
+//     return email.slice(0, email.indexOf("@"));
+// }
+
+// console.log(getUserName("player1@gmail.com"));
+
+
+const toProperCase = (name) =>{
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 }
+
+console.log(toProperCase("jake"));
