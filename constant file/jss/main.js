@@ -1,31 +1,35 @@
-const vehicle = {
-    wheels: 4,
-    engine: function(){
-        return "vrrom!";
+
+
+
+class Pizza{
+    crust = "orginal";
+    #sauce = "traditional";
+    #size;
+    constructor(pizzaType){
+        this.#size = pizzaType;
     }
 
+    hereYouGo() {
+
+        console.log(`Here's your ${this.crust} ${this.#sauce}`);
+    }
 }
 
-const truck = Object.create(vehicle);
-truck.doors = 2;
-console.log(truck);
-console.log(truck.wheels)
-console.log(truck.engine())
+ const myPizza = new Pizza("large");
+ myPizza.hereYouGo();
 
+// const myPizza = new Pizza("piza");
+// myPizza.bake()
 
-// const obj = { name: "Nabeel" };
-
-// const another = {
-//     alive: true, 
-//     answer: 42,
-//     hobbies: ["Eat", "sleep", "code"],
-//     beverage:{
-//         morning: "coffee",
-//         afternoon: "iced tea"
-//     },
-//     action: function() {
-//         return `Time for ${this.beverage.morning}`;
+// class SpecialtyPizza extends Pizza{
+//     constructor(pizzaSize){
+//         super(pizzaSize);
+//         this.type = "the Works";
 //     }
+//     slice(){
+//         console.log(`Our ${this.type} ${this.size} pizza has 8 slices`);
+//     }
+// }
 
-// };
-// console.log(another.action());
+// const mySpecialty = new SpecialtyPizza("medium");
+// mySpecialty.slice()
