@@ -1,0 +1,2 @@
+20240404	09:14:28;	e69e966d-d923-40cf-a14a-6fa7add595da	log event emitted!
+20240404	09:14:28;	4b4f891f-c58c-4a55-9530-4a51d74e4091	log event emitted!
